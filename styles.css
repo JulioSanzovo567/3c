@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+:root {
+    --azul-escuro: #001332;
+    --azul-claro: #004abd;
+    --alto-contraste-fundo: #0A1929;
+    --alto-contraste-texto: #ffffff;
+    --alto-contraste-link: #4dabf7;
+    --alto-contraste-secundario: #1E293B;
+    --alto-contraste-hover: #60B3FF;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Montserrat';
+}
+
+header {
+    background-color: #ffffff;
+}
+
+
+section {
+    padding-bottom: 5rem;
+}
+
+
+.nav-link {
+    color: var(--azul-claro);
+    font-weight: 600;
+    position: relative;
+    padding: 0.5rem 1rem;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--azul-claro);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.inicio-fundo {
+    background: linear-gradient(135deg, var(--azul-escuro) 0%, var(--azul-claro) 100%);
+    position: relative;
+    overflow: hidden;
+    border-radius: 80px;
+    width: 100%;
+    height: 606px;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.inicio-fundo::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 50%);
+    animation: rotate 30s linear infinite;
+}
+
+/* posicionamento para a imagem à direita */
+.img-inicio {
+    position: absolute;
+    right: 0;
+    top: 18rem;
+    width: 45rem;
+    height: auto;
+}
+
+
+.esquerda-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+
+.botao-inicio {
+    background: linear-gradient(45deg, var(--azul-claro), #0066ff);
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    border-radius: 30px;
+    width: 14em;
+    height: 3em;
+    align-content: center;
+}
+
+.botao-inicio:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    background: linear-gradient(45deg, #0066ff, var(--azul-claro));
+}
+
+.display-4 {
+    text-shadow: -5px 5px var(--azul-claro);
+}
+
+
+/* Remover ou comentar o antigo estilo do #tropicalia */
+
+.secao-uxdesign {
+    position: relative;
+    padding-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background: linear-gradient(135deg, var(--azul-escuro), var(--azul-claro));
+    border-radius: 20px;
+}
+
+.texto-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.secao-uxdesign h2 {
+    margin-bottom: 2rem;
+    color: var(--azul-escuro);
+    font-size: 2.5em;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.secao-uxdesign h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--azul-claro), transparent);
+}
+
+.secao-uxdesign p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+}
+
+#galeria {
+    background-color: #f0f4f8;
+
+}
+
+.fundo-galeria {
+    background: url('img/flor-bottom-direita.png') bottom right no-repeat;
+    background-size: 180px 180px;
+}
+
+#contato {
+    background-image: linear-gradient(to right, var(--azul-escuro), var(--azul-claro));
+    background-size: cover;
+    padding: 4rem 0;
+    /* Espaçamento interno para a seção de contato */
+
+}
+
+.formulario {
+    background-color: #ffffff;
+    padding: 2rem;
+    /* Espaçamento interno dentro do formulário */
+    border-radius: 10px;
+    /* Borda arredondada para o formulário */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave para destacar o formulário */
+    font-weight: bold;
+}
+
+.formulario button {
+    background-color: var(--azul-claro);
+    border: none;
+    font-weight: bold;
+}
+
+.form-control {
+    background-color: #F1EDEF;
+}
+.menu-acessibilidade{
+    position: fixed;
+    top:2rem;
+    right:20px;
+    z-index: 1000;
+}
+
+.rotacao-botao{
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-acessibilidade{
+    margin-top:10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes-acessibilidade button{
+    margin-bottom: 5px;
+}
+.apresenta-lista{
+    display: none;
+}
+
+.alto-contraste {
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario {
+    background-color: var(--alto-contraste-secundario);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste .nav-link {
+    color: var(--alto-contraste-link);
+}
+
+.alto-contraste .nav-link:hover {
+    color: var(--alto-contraste-hover);
+}
+
+.alto-contraste .nav-link::after {
+    background: var(--alto-contraste-link);
+}
+
+.alto-contraste .inicio-fundo {
+    background: linear-gradient(135deg, #001B3D 0%, #003785 100%);
+}
+
+.alto-contraste .texto-uxdesign {
+    color: var(--alto-contraste-texto);
+    text-shadow: 
+        3px 3px 0 var(--alto-contraste-link),
+        6px 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary {
+    background: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo);
+}
+
+.alto-contraste .botao-inicio:hover,
+.alto-contraste .formulario button:hover,
+.alto-contraste .btn-primary:hover {
+    background: var(--alto-contraste-hover);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.alto-contraste .secao-uxdesign {
+    background: linear-gradient(135deg, #001B3D 0%, #003785 100%);
+}
+
+.alto-contraste .texto-container {
+    background: var(--alto-contraste-secundario);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.alto-contraste .secao-uxdesign h2 {
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste .secao-uxdesign h2::after {
+    background: linear-gradient(90deg, var(--alto-contraste-link), transparent);
+}
+
+.alto-contraste .secao-uxdesign p {
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste #galeria {
+    background-color: var(--alto-contraste-fundo);
+}
+
+.alto-contraste .form-control {
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.alto-contraste .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.alto-contraste #tropicalia {
+    background: none;
+}
+
+.alto-contraste .fundo-galeria {
+    background: none;
+}
+
+.texto-uxdesign {
+    font-size: 7rem;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: 4px;
+    color: #ffffff;
+    text-shadow: 
+        3px 3px 0 var(--azul-claro),
+        6px 6px 15px rgba(0, 0, 0, 0.3);
+    margin: -0.5rem 0 1.5rem 0;
+    line-height: 1.1;
+    font-family: 'Montserrat', sans-serif;
+    transform: none;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+}
+
+.texto-uxdesign:hover {
+    transform: translateY(-5px);
+    text-shadow: 
+        3px 3px 0 var(--azul-claro),
+        8px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Remover os estilos anteriores que não estavam funcionando bem */
+.texto-uxdesign::after {
+    display: none;
+}
+
+.btn-primary {
+    background-color: var(--azul-claro);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--azul-escuro);
+    transition: background-color 0.3s ease;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.nav {
+    margin: 0;  /* Remove a margem superior que estava compensando o logo */
+    padding-left: 0;
+}
+
+nav {
+    justify-content: space-between !important;
+}

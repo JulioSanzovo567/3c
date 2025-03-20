@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>UX Design</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="p-5">
+        <nav class="container d-flex justify-content-between align-items-center" >
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+            <div id="acessibilidade" class="menu-acessibilidade"> 
+                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="diminuir o tamanho da fonte">A-</button>
+                    <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alterna o contraste de cores"> <i class="bi bi-shadows"></i></button>         
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="container my-5">
+
+        <section id="inicio" class="my-5">
+            <div class="inicio-fundo d-flex justify-content-between align-items-center">
+                <div class="esquerda-conteudo">
+                    <h1 class="display-4 text-white fst-italic fw-bold">Descubra o</h1>
+                    <div class="texto-uxdesign">UX DESIGN</div>
+                    <a href="#uxdesign"
+                        class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero
+                        aprender!</a>
+                </div>
+
+              </div>
+        </section>
+
+    
+
+        <section id="uxdesign" class="my-5 pt-6 secao-uxdesign" tabindex="0" aria-label="Seção explicativa sobre UX Design">
+            <div class="container">
+                <div class="texto-container">
+                    <h2 class="text-center">O que é UX Design?</h2>
+                    <p class="p-4">O UX Design (User Experience Design) surgiu na década de 1990 quando Don Norman, 
+                    enquanto trabalhava na Apple, cunhou o termo "User Experience". Desde então, tornou-se uma das 
+                    áreas mais importantes no desenvolvimento de produtos digitais. O UX Design foca em criar 
+                    experiências significativas para os usuários, combinando aspectos de psicologia, design, 
+                    pesquisa e tecnologia. Com o crescimento da era digital, o papel do UX Designer tornou-se 
+                    fundamental para garantir que aplicativos, sites e produtos digitais sejam não apenas 
+                    funcionais, mas também intuitivos e agradáveis de usar.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" tabindex="0" aria-label="Seção de galeria de imagens">
+            <h2 class="text-center pt-5">Galeria</h2>
+            <div class="container p-3 mt-3  ">
+
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="https://images.ctfassets.net/vv1yxl437u7d/3gOaQtmjMzDu3tR7Wiahec/4c4d2aed0074c9826a2c5285477d52cf/Blog_Feautre_1200x630_MobileUXDesign_CompleteGuide2022_06.png?w=2400&h=1260&q=95&fm=png"
+                            class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://images.ctfassets.net/vv1yxl437u7d/4STaPcLPUxRUvVDC8YEACZ/e79cd0b65bbdaee8191bf3aa78c975fa/Blog_Feautre_1200x630_MobileUXDesign_CompleteGuide2022_02.png?w=2400&h=1260&q=95&fm=png" class="img-fluid rounded-5"
+                            loading="lazy">
+                    </div>
+                </div>
+            
+             </div>
+        </section>
+
+        <section id="contato">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario"> <!-- Caixa do formulário com 60% de largura -->
+                    <h2 class="mb-3">Entre em contato</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu email">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
+                                placeholder="Escreva sua mensagem"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar
+                                mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center p-3 fst-italic">
+        <p>Acesse nossas redes:</p>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-tiktok"></i>
+        <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
+    <script src="script.js"></script>
+  
+</body>
+
+</html>
